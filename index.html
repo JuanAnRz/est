@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    #lottie{
+        max-width: 500px;
+        height: 500px;
+        margin: auto;
+    }
+    </style>
+    <script src="https://unpkg.com/lottie-web/build/player/lottie.min.js"></script>
+    <div id="lottie"></div>
+    <script>
+    lottie.loadAnimation({
+        container: document.getElementById('lottie'),
+        renderer: 'svg',
+        loop: false,
+        autoplay: true,
+        path: 'Scene-1.json' // tu JSON exportado
+    });
+    </script>
+
+</body>
+</html>
